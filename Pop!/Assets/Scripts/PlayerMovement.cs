@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
 
         animator.SetFloat("horizontal", horizontal);
+        animator.SetBool("jumping", jumping);
 
         if (horizontal < 0)
         {
