@@ -7,6 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
 
     public string whichScene;
+    public Vector3 whereTo;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class SceneChanger : MonoBehaviour
     private void OnTriggerEnter2D()
     {
 
-        GameManager.Instance.NextScene(whichScene);
+        GameManager.Instance.NextScene(whichScene,whereTo);
 
     }
     

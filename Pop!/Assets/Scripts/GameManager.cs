@@ -14,12 +14,16 @@ public class GameManager : MonoBehaviour
 
     public GameObject canvas;
     public GameObject events;
+    public GameObject player;
+
+    private Vector3 nextPlayerLoc;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        nextPlayerLoc = new Vector3(0,0,0);
+        player.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(canvas);
             DontDestroyOnLoad(events);
+            DontDestroyOnLoad(player);
 
         }
         else
@@ -45,7 +50,8 @@ public class GameManager : MonoBehaviour
     public void StartButon()
     {
         startButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("CentralWorld"));
+        StartCoroutine(LoadYourAsyncScene("CentralWorld", nextPlayerLoc));
+        player.SetActive(true);
 
     }
     IEnumerator ColorLerp(Color endValue, float duration)
@@ -62,8 +68,9 @@ public class GameManager : MonoBehaviour
         }
         sprite.color = endValue;
     }
-    IEnumerator LoadYourAsyncScene(string scene)
+    IEnumerator LoadYourAsyncScene(string scene, Vector3 whereTo)
     {
+        nextPlayerLoc = whereTo;
         if (!SceneManager.GetActiveScene().name.Equals("Start"))
         {
             StartCoroutine(ColorLerp(new Color(0, 0, 0, 1), 1));
@@ -78,12 +85,19 @@ public class GameManager : MonoBehaviour
                 yield return null;
             }
 
-            StartCoroutine(ColorLerp(new Color(0, 0, 0, 0), 1));
+        player.transform.position = nextPlayerLoc;
+        StartCoroutine(ColorLerp(new Color(0, 0, 0, 0), 1));
        
     }
-    public void NextScene(string whichScene)
+    public void NextScene(string whichScene, Vector3 whereTo)
     {
-        StartCoroutine(LoadYourAsyncScene(whichScene));
+
+
+        StartCoroutine(LoadYourAsyncScene(whichScene, whereTo));
+
+  
+
+
 
     }
 }
