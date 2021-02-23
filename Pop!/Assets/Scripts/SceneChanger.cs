@@ -22,19 +22,9 @@ public class SceneChanger : MonoBehaviour
 
     private void OnTriggerEnter2D()
     {
-       
-        StartCoroutine(LoadYourAsyncScene());
+
+        GameManager.Instance.NextScene(whichScene);
 
     }
-    IEnumerator LoadYourAsyncScene()
-    {
-        
-
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(whichScene);
-
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-    }
+    
 }
