@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 8c3e9c1fb665f9646940d8056aa41f6d
+guid: 375546640bfb6804dabdb4ede073da0a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8790060400828725089
-    second: PoppedRun-Sheet_0
+      213: -7493014596212044984
+    second: CornPoshIdle-Sheet_0
   - first:
-      213: -427028693723101299
-    second: PoppedRun-Sheet_1
+      213: 9160169928448948002
+    second: CornPoshIdle-Sheet_1
   - first:
-      213: 5526987780863515965
-    second: PoppedRun-Sheet_2
+      213: 6374000538210701187
+    second: CornPoshIdle-Sheet_2
   - first:
-      213: -8641792636235569825
-    second: PoppedRun-Sheet_3
+      213: 5994997291514396341
+    second: CornPoshIdle-Sheet_3
   - first:
-      213: -4478310052440276322
-    second: PoppedRun-Sheet_4
+      213: 8846228518566300758
+    second: CornPoshIdle-Sheet_4
   - first:
-      213: 65565193755586668
-    second: PoppedRun-Sheet_5
+      213: 4202870326081630698
+    second: CornPoshIdle-Sheet_5
+  - first:
+      213: -3026797506284240999
+    second: CornPoshIdle-Sheet_6
+  - first:
+      213: 3567126477487017886
+    second: CornPoshIdle-Sheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoppedRun-Sheet_0
+      name: CornPoshIdle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 167bf91ec519cf970800000000000000
-      internalID: 8790060400828725089
+      spriteID: 84bc6f7ace6730890800000000000000
+      internalID: -7493014596212044984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_1
+      name: CornPoshIdle-Sheet_1
       rect:
         serializedVersion: 2
         x: 160
@@ -156,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d874cb16aa3e21af0800000000000000
-      internalID: -427028693723101299
+      spriteID: 2273a6b64067f1f70800000000000000
+      internalID: 9160169928448948002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_2
+      name: CornPoshIdle-Sheet_2
       rect:
         serializedVersion: 2
         x: 320
@@ -177,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d5b4c7a1ec3bc40800000000000000
-      internalID: 5526987780863515965
+      spriteID: 38f8236f7bff47850800000000000000
+      internalID: 6374000538210701187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_3
+      name: CornPoshIdle-Sheet_3
       rect:
         serializedVersion: 2
         x: 480
@@ -198,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f55a79e226f221880800000000000000
-      internalID: -8641792636235569825
+      spriteID: 5bef4261642823350800000000000000
+      internalID: 5994997291514396341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_4
+      name: CornPoshIdle-Sheet_4
       rect:
         serializedVersion: 2
         x: 640
@@ -219,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e928c320cb8d9d1c0800000000000000
-      internalID: -4478310052440276322
+      spriteID: 65c0313e7fd14ca70800000000000000
+      internalID: 8846228518566300758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_5
+      name: CornPoshIdle-Sheet_5
       rect:
         serializedVersion: 2
         x: 800
@@ -240,8 +246,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c607e63423fe8e000800000000000000
-      internalID: 65565193755586668
+      spriteID: ae130273b48935a30800000000000000
+      internalID: 4202870326081630698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CornPoshIdle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fb3e664b7aef5d0800000000000000
+      internalID: -3026797506284240999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CornPoshIdle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f018fb1aaf08130800000000000000
+      internalID: 3567126477487017886
       vertices: []
       indices: 
       edges: []

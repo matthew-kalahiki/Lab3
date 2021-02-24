@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 8c3e9c1fb665f9646940d8056aa41f6d
+guid: 4bc91314f1ca5934294a9594069cc6dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8790060400828725089
-    second: PoppedRun-Sheet_0
+      213: 7882530523498737969
+    second: CornKidIdle-Sheet_0
   - first:
-      213: -427028693723101299
-    second: PoppedRun-Sheet_1
+      213: 4102685942673261215
+    second: CornKidIdle-Sheet_1
   - first:
-      213: 5526987780863515965
-    second: PoppedRun-Sheet_2
+      213: 6858709246717639086
+    second: CornKidIdle-Sheet_2
   - first:
-      213: -8641792636235569825
-    second: PoppedRun-Sheet_3
+      213: -2467256978922174057
+    second: CornKidIdle-Sheet_3
   - first:
-      213: -4478310052440276322
-    second: PoppedRun-Sheet_4
+      213: -8452210170278494538
+    second: CornKidIdle-Sheet_4
   - first:
-      213: 65565193755586668
-    second: PoppedRun-Sheet_5
+      213: 5119486962709622603
+    second: CornKidIdle-Sheet_5
+  - first:
+      213: -7389466277187937520
+    second: CornKidIdle-Sheet_6
+  - first:
+      213: -199151512274795166
+    second: CornKidIdle-Sheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoppedRun-Sheet_0
+      name: CornKidIdle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 167bf91ec519cf970800000000000000
-      internalID: 8790060400828725089
+      spriteID: 131f0586fbf546d60800000000000000
+      internalID: 7882530523498737969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_1
+      name: CornKidIdle-Sheet_1
       rect:
         serializedVersion: 2
         x: 160
@@ -156,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d874cb16aa3e21af0800000000000000
-      internalID: -427028693723101299
+      spriteID: f92470eb02bafe830800000000000000
+      internalID: 4102685942673261215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_2
+      name: CornKidIdle-Sheet_2
       rect:
         serializedVersion: 2
         x: 320
@@ -177,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d5b4c7a1ec3bc40800000000000000
-      internalID: 5526987780863515965
+      spriteID: ea9ba4c88b70f2f50800000000000000
+      internalID: 6858709246717639086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_3
+      name: CornKidIdle-Sheet_3
       rect:
         serializedVersion: 2
         x: 480
@@ -198,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f55a79e226f221880800000000000000
-      internalID: -8641792636235569825
+      spriteID: 7998db989da82cdd0800000000000000
+      internalID: -2467256978922174057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_4
+      name: CornKidIdle-Sheet_4
       rect:
         serializedVersion: 2
         x: 640
@@ -219,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e928c320cb8d9d1c0800000000000000
-      internalID: -4478310052440276322
+      spriteID: 6be3b91c1a7b3ba80800000000000000
+      internalID: -8452210170278494538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PoppedRun-Sheet_5
+      name: CornKidIdle-Sheet_5
       rect:
         serializedVersion: 2
         x: 800
@@ -240,8 +246,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c607e63423fe8e000800000000000000
-      internalID: 65565193755586668
+      spriteID: b4fec84b4421c0740800000000000000
+      internalID: 5119486962709622603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CornKidIdle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b1c7c6297537990800000000000000
+      internalID: -7389466277187937520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CornKidIdle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265016631c87c3df0800000000000000
+      internalID: -199151512274795166
       vertices: []
       indices: 
       edges: []
