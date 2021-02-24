@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
 
     private bool jumping;
+    private bool popped;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("horizontal", horizontal);
         animator.SetBool("jumping", jumping);
+        animator.SetBool("popped", popped);
 
         if (horizontal < 0)
         {
@@ -47,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
         {
             body.AddForce(new Vector2(0, jumpForce));
             jumping = true;
+        } else if (Input.GetKeyDown("space") && jumping && !popped)
+        {
+            popped = true;
+            body.AddForce(new Vector2(0, jumpForce));
         }
     }
 
