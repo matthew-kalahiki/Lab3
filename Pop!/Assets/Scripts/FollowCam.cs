@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowCam : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public float boundaryPercent;
 
     private float lBound;
@@ -22,6 +22,8 @@ public class FollowCam : MonoBehaviour
 
         dBound = boundaryPercent * Camera.main.pixelHeight;
         uBound = Camera.main.pixelHeight - dBound;
+
+        player = GameManager.Instance.GetPlayer();
     }
 
     // Update is called once per frame

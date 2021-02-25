@@ -100,4 +100,8 @@ public class GameManager : MonoBehaviour
 
 
     }
+    public GameObject GetPlayer()
+    {
+        return player;
+    }
 }
