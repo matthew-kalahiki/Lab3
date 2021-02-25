@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool jumping;
     private bool popped;
+    ParticleSystem popParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        popParticle = GetComponentsInChildren<ParticleSystem>()[4];
     }
 
     // Update is called once per frame
@@ -56,7 +58,10 @@ public class PlayerMovement : MonoBehaviour
             else if (Input.GetKeyDown("space") && jumping && !popped)
             {
                 popped = true;
+
                 body.AddForce(new Vector2(0, jumpForce));
+                popParticle.Play();
+
             }
         }
     }
