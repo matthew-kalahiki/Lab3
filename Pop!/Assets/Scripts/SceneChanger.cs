@@ -23,7 +23,7 @@ public class SceneChanger : MonoBehaviour
 
     private void OnTriggerEnter2D()
     {
-
+        GameManager.Instance.UpdateIsPaused();
         GameManager.Instance.NextScene(whichScene,whereTo);
 
     }

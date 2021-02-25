@@ -417,7 +417,7 @@ MonoBehaviour:
   loc: {fileID: 1155089356}
   loc2: {fileID: 525804455}
   Camera: {fileID: 519420028}
-  duration: 5
+  duration: 30
 --- !u!61 &765517170
 BoxCollider2D:
   m_ObjectHideFlags: 0

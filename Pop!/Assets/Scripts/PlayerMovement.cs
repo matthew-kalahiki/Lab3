@@ -64,8 +64,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!GameManager.Instance.GetIsPaused()) {
+        if (!GameManager.Instance.GetIsPaused())
+        {
             body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
+        }
+        else
+        {
+            body.velocity = new Vector2(0,0);
         }
     }
 

@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     private Vector3 nextPlayerLoc;
 
-    private bool isPaused;
+    private bool isPaused = true;
 
     private Coroutine dialogueCo;
 
@@ -99,16 +99,15 @@ public class GameManager : MonoBehaviour
 
         player.transform.position = nextPlayerLoc;
         StartCoroutine(ColorLerp(new Color(0, 0, 0, 0), 1));
-       
+        UpdateIsPaused();
+
     }
     public void NextScene(string whichScene, Vector3 whereTo)
     {
 
 
         StartCoroutine(LoadYourAsyncScene(whichScene, whereTo));
-
-  
-
+      
 
 
     }
@@ -157,7 +156,13 @@ public class GameManager : MonoBehaviour
         isPaused = !isPaused;
         if (isPaused)
         {
-            player.GetComponent<Rigidbody2D>();
+            player.GetComponent<Rigidbody2D>().gravityScale = 0;
+
         }
+        else
+        {
+            player.GetComponent<Rigidbody2D>().gravityScale = 1;
+        }
+
     }
 }
