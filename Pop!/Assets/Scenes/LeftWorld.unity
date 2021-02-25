@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"Ce saut est trop pour moi"'
+  text: Ce saut est trop pour moi
 --- !u!1001 &331027571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"Cmon just go up there already!"'
+  text: Cmon just go up there already!
 --- !u!1001 &423284841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"They aren''t going to, they are way too scared."'
+  text: They aren't going to, they are way too scared.
 --- !u!1 &611612144
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"Way to make it down here. Only the cool kernals can do that."'
+  text: Way to make it down here. Only the cool kernals can do that.
 --- !u!1 &981871741
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,8 +983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"My uncle went up there once,  and we never saw him again! There is no way
-    I''m doing it."'
+  text: My uncle went up there once,  and we never saw him again! There is no way
+    I'm doing it.
 --- !u!1001 &1184354193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"How indubitably ridiculous those balloons are! They have no place here!"'
+  text: How indubitably ridiculous those balloons are! They have no place here!
 --- !u!1 &1185888754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"How do you like my balloons? I think that posh kernal is rather jealous!"'
+  text: How do you like my balloons? I think that posh kernal is rather jealous!
 --- !u!1001 &1723145640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2562,8 +2562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: '"I tried to jump twice and over exerted myself. Popping did give me a little
-    boost though!"'
+  text: I tried to jump twice and over exerted myself. Popping did give me a little
+    boost though!
 --- !u!1 &1727600571
 GameObject:
   m_ObjectHideFlags: 0

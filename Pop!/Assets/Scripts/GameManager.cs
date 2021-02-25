@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     private bool isPaused;
 
+    private Coroutine dialogueCo;
+
 
     // Start is called before the first frame update
     void Start()
@@ -118,14 +120,29 @@ public class GameManager : MonoBehaviour
     public void StartDialogue(string text)
     {
         dialogueBox.SetActive(true);
-        textBox.GetComponent<TextMeshProUGUI>().text = text;
+        dialogueCo = StartCoroutine(typeText(text));
+
 
     }
 
     public void HideDialogue()
     {
         dialogueBox.SetActive(false);
+        StopCoroutine(dialogueCo);
+        
     }
+
+    IEnumerator typeText(string text)
+    {
+        textBox.GetComponent<TextMeshProUGUI>().text = "";
+        foreach(char c in text.ToCharArray())
+        {
+            textBox.GetComponent<TextMeshProUGUI>().text += c;
+            yield return new WaitForSeconds(.03f);
+        }
+            
+    }
+
     public void UpdateScrewdriver(int colorIndex)
     {
         screwdrivers[colorIndex] = true;
