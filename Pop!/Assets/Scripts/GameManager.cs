@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 
     private Vector3 nextPlayerLoc;
 
+    private bool isPaused;
+
 
     // Start is called before the first frame update
     void Start()
@@ -128,5 +130,17 @@ public class GameManager : MonoBehaviour
     {
         screwdrivers[colorIndex] = true;
         colors[colorIndex].SetActive(true);
+    }
+    public bool GetIsPaused()
+    {
+        return isPaused;
+    }
+    public void UpdateIsPaused()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            player.GetComponent<Rigidbody2D>();
+        }
     }
 }

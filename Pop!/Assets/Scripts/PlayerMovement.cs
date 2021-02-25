@@ -31,35 +31,42 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        if (!GameManager.Instance.GetIsPaused())
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
 
-        animator.SetFloat("horizontal", horizontal);
-        animator.SetBool("jumping", jumping);
-        animator.SetBool("popped", popped);
+            animator.SetFloat("horizontal", horizontal);
+            animator.SetBool("jumping", jumping);
+            animator.SetBool("popped", popped);
 
-        if (horizontal < 0)
-        {
-            sr.flipX = true;
-        } else if (horizontal > 0)
-        {
-            sr.flipX = false;
-        }
+            if (horizontal < 0)
+            {
+                sr.flipX = true;
+            }
+            else if (horizontal > 0)
+            {
+                sr.flipX = false;
+            }
 
-        if (Input.GetKeyDown("space") && !jumping)
-        {
-            body.AddForce(new Vector2(0, jumpForce));
-            jumping = true;
-        } else if (Input.GetKeyDown("space") && jumping && !popped)
-        {
-            popped = true;
-            body.AddForce(new Vector2(0, jumpForce));
+            if (Input.GetKeyDown("space") && !jumping)
+            {
+                body.AddForce(new Vector2(0, jumpForce));
+                jumping = true;
+            }
+            else if (Input.GetKeyDown("space") && jumping && !popped)
+            {
+                popped = true;
+                body.AddForce(new Vector2(0, jumpForce));
+            }
         }
     }
 
 
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
+        if (!GameManager.Instance.GetIsPaused()) {
+            body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
+        }
     }
 
 
