@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void StartButon()
     {
         startButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("LeftWorld", nextPlayerLoc));
+        StartCoroutine(LoadYourAsyncScene("CentralWorld", nextPlayerLoc));
         player.SetActive(true);
 
     }
