@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     public GameObject events;
     public GameObject player;
 
+    public GameObject[] colors;
+
+    private bool[] screwdrivers = new bool[] {false,false,false,false};
+
     private Vector3 nextPlayerLoc;
 
 
@@ -54,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void StartButon()
     {
         startButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("LeftWorld", nextPlayerLoc));
+        StartCoroutine(LoadYourAsyncScene("CentralWorld", nextPlayerLoc));
         player.SetActive(true);
 
     }
@@ -119,5 +123,10 @@ public class GameManager : MonoBehaviour
     public void HideDialogue()
     {
         dialogueBox.SetActive(false);
+    }
+    public void UpdateScrewdriver(int colorIndex)
+    {
+        screwdrivers[colorIndex] = true;
+        colors[colorIndex].SetActive(true);
     }
 }
