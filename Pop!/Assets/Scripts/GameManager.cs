@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject startButton;
     public GameObject backgroundImage;
+
+    public GameObject dialogueBox;
+    public GameObject textBox;
 
     public GameObject canvas;
     public GameObject events;
@@ -103,5 +107,17 @@ public class GameManager : MonoBehaviour
     public GameObject GetPlayer()
     {
         return player;
+    }
+
+    public void StartDialogue(string text)
+    {
+        dialogueBox.SetActive(true);
+        textBox.GetComponent<TextMeshProUGUI>().text = text;
+
+    }
+
+    public void HideDialogue()
+    {
+        dialogueBox.SetActive(false);
     }
 }

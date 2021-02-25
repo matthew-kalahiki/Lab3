@@ -185,6 +185,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 984087468622463996, guid: 763376b76d9d28d499e4ee0f6b48a611, type: 3}
   m_PrefabInstance: {fileID: 297833058}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &297833060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1057007038366197441, guid: 763376b76d9d28d499e4ee0f6b48a611, type: 3}
+  m_PrefabInstance: {fileID: 297833058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &297833061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297833060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"Ce saut est trop pour moi"'
 --- !u!1001 &331027571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247,6 +265,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2817291290065400108, guid: 2f4482820ce6e3146b12aaedda6e882d, type: 3}
   m_PrefabInstance: {fileID: 331027571}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &331027573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5572137251667218462, guid: 2f4482820ce6e3146b12aaedda6e882d, type: 3}
+  m_PrefabInstance: {fileID: 331027571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &331027574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331027573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"Cmon just go up there already!"'
 --- !u!1001 &423284841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -513,6 +549,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2817291290065400108, guid: 2f4482820ce6e3146b12aaedda6e882d, type: 3}
   m_PrefabInstance: {fileID: 538039555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &538039557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5572137251667218462, guid: 2f4482820ce6e3146b12aaedda6e882d, type: 3}
+  m_PrefabInstance: {fileID: 538039555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &538039558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538039557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"They aren''t going to, they are way too scared."'
 --- !u!1 &611612144
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +667,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3057332795630936480, guid: 6ba249a744c59614689eb6faf335cb89, type: 3}
   m_PrefabInstance: {fileID: 823700200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &823700202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3057332795630936485, guid: 6ba249a744c59614689eb6faf335cb89, type: 3}
+  m_PrefabInstance: {fileID: 823700200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &823700203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823700202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"Way to make it down here. Only the cool kernals can do that."'
 --- !u!1001 &1173026636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -679,6 +751,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2817291290065400108, guid: 2f4482820ce6e3146b12aaedda6e882d, type: 3}
   m_PrefabInstance: {fileID: 1173026636}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1173026638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5572137251667218462, guid: 2f4482820ce6e3146b12aaedda6e882d, type: 3}
+  m_PrefabInstance: {fileID: 1173026636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1173026639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173026638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"My uncle went up there once,  and we never saw him again! There is no way
+    I''m doing it."'
 --- !u!1001 &1184354193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -741,6 +832,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4636259425464979412, guid: 63df845ae6edc564fbac5d547034ff4c, type: 3}
   m_PrefabInstance: {fileID: 1184354193}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1184354195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2153094085645075638, guid: 63df845ae6edc564fbac5d547034ff4c, type: 3}
+  m_PrefabInstance: {fileID: 1184354193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1184354196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184354195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"How indubitably ridiculous those balloons are! They have no place here!"'
 --- !u!1 &1666035458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1816,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4529921365782215808, guid: bea270debf6286a47affa9b5b89618cf, type: 3}
   m_PrefabInstance: {fileID: 1672531451}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1672531453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9016253417037632910, guid: bea270debf6286a47affa9b5b89618cf, type: 3}
+  m_PrefabInstance: {fileID: 1672531451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1672531454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672531453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"How do you like my balloons? I think that posh kernal is rather jealous!"'
 --- !u!1001 &1723145640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1773,6 +1900,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1964344010459276335, guid: 092136d8a6b6487499cb8a86f48ecc0f, type: 3}
   m_PrefabInstance: {fileID: 1723145640}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1723145642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4572731497176711186, guid: 092136d8a6b6487499cb8a86f48ecc0f, type: 3}
+  m_PrefabInstance: {fileID: 1723145640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1723145643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723145642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf652ac8f209a1449b425753a5f7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: '"I tried to jump twice and over exerted myself. Popping did give me a little
+    boost though!"'
 --- !u!1 &1727600571
 GameObject:
   m_ObjectHideFlags: 0
