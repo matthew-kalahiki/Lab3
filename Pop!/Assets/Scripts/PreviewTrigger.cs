@@ -37,6 +37,7 @@ public class PreviewTrigger : MonoBehaviour
     {
         //isLerp = true;
         GameManager.Instance.UpdateIsPaused();
+        Camera.GetComponent<FollowCam>().enabled = false;
         StartCoroutine(LerpPosition(pos));
 
     }
@@ -71,5 +72,6 @@ public class PreviewTrigger : MonoBehaviour
         Camera.transform.position = targetPosition;
         GameManager.Instance.UpdateIsPaused();
         gameObject.SetActive(false);
+        Camera.GetComponent<FollowCam>().enabled = true;
     }
 }
