@@ -347,7 +347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3ffc707b65dca449bca8002d5ccff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   boundaryPercent: 0.35
   easing: 0.01
 --- !u!20 &519420031
