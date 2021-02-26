@@ -39,6 +39,7 @@ public class Screwdriver : MonoBehaviour
                     sound.Play();
                     Destroy(gameObject, sound.clip.length);
                     Debug.Log("1");
+                    Destroy(GameObject.Find("ScrewdriverYellow-Sheet_0 (1)"));
                 }
             }
         }
