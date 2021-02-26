@@ -111,12 +111,7 @@ public class GameManager : MonoBehaviour
         UpdateIsPaused();
         
 
-        for (int i = 0; i < 4; i++)
-        {
-            if (screwdrivers[i]) {
-                i = i;
-            }
-        }
+        
 
     }
     public void NextScene(string whichScene, Vector3 whereTo)
@@ -211,5 +206,8 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         VictoryImage.SetActive(true);
+        startButton.SetActive(true);
+        UpdateIsPaused();
+        backgroundImage = VictoryImage;
     }
 }
