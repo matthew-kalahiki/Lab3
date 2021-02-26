@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject startButton;
     public GameObject backgroundImage;
+    public GameObject VictoryImage;
 
     public GameObject dialogueBox;
     public GameObject textBox;
@@ -206,5 +207,9 @@ public class GameManager : MonoBehaviour
     public void UpdatePopped(bool isPopped)
     {
         popped = isPopped;
+    }
+    public void Win()
+    {
+        VictoryImage.SetActive(true);
     }
 }

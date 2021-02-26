@@ -41,7 +41,7 @@ public class EscapePanel : MonoBehaviour
             }
             else
             {
-                text = "You Escaped";
+                GameManager.Instance.Win();
             }
 
             GameManager.Instance.StartDialogue(text);
