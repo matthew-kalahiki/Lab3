@@ -8,6 +8,7 @@ TagManager:
   - Yellow
   - Green
   - Blue
+  - Death
   layers:
   - Default
   - TransparentFX

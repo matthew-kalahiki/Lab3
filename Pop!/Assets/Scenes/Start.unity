@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 90681833}
   - component: {fileID: 90681835}
   - component: {fileID: 90681834}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90681832}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 611530862}
@@ -5167,7 +5167,7 @@ GameObject:
   - component: {fileID: 551819080}
   - component: {fileID: 551819082}
   - component: {fileID: 551819081}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5182,7 +5182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551819079}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 611530862}
@@ -9971,7 +9971,7 @@ GameObject:
   - component: {fileID: 562923374}
   - component: {fileID: 562923376}
   - component: {fileID: 562923375}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9986,7 +9986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562923373}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 611530862}
@@ -14777,15 +14777,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2563577245453882079, guid: e379cda429b80dc4c9e05147a8c9bd50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2563577245453882079, guid: e379cda429b80dc4c9e05147a8c9bd50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2563577245453882079, guid: e379cda429b80dc4c9e05147a8c9bd50, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2563577245453882079, guid: e379cda429b80dc4c9e05147a8c9bd50, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15289,7 +15289,7 @@ GameObject:
   - component: {fileID: 1339640070}
   - component: {fileID: 1339640072}
   - component: {fileID: 1339640071}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15304,7 +15304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339640069}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 611530862}
@@ -20484,7 +20484,7 @@ GameObject:
   - component: {fileID: 2002894053}
   - component: {fileID: 2002894055}
   - component: {fileID: 2002894054}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Pop Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20499,7 +20499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002894052}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 611530862}

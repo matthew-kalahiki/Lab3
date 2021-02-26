@@ -24,6 +24,10 @@ public class SceneChanger : MonoBehaviour
     private void OnTriggerEnter2D()
     {
         GameManager.Instance.UpdateIsPaused();
+        if (whichScene == "LeftWorld" && GameManager.Instance.beatT() && SceneManager.GetActiveScene().name == "LeftWorld")
+        {
+            whichScene = "CentralWorld";
+        }
         GameManager.Instance.NextScene(whichScene,whereTo);
 
     }

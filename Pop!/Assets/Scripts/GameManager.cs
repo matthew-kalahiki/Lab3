@@ -32,12 +32,15 @@ public class GameManager : MonoBehaviour
 
     private Coroutine dialogueCo;
 
+    private bool beatTutorial;
+
 
     // Start is called before the first frame update
     void Start()
     {
         nextPlayerLoc = new Vector3(0,0,0);
         player.SetActive(false);
+        beatTutorial = false;
     }
 
     // Update is called once per frame
@@ -107,7 +110,7 @@ public class GameManager : MonoBehaviour
     public void NextScene(string whichScene, Vector3 whereTo)
     {
 
-
+        beatTutorial = true;
         StartCoroutine(LoadYourAsyncScene(whichScene, whereTo));
       
 
@@ -175,5 +178,10 @@ public class GameManager : MonoBehaviour
     public void UpdateIsPreview()
     {
         isPreview = !isPreview;
+
+    }
+    public bool beatT()
+    {
+        return beatTutorial;
     }
 }
