@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             else if (Input.GetKeyDown("space") && jumping && !popped)
             {
                 popped = true;
-                GameManager.Instance.UpdatePopped();
+                GameManager.Instance.UpdatePopped(true);
 
                 body.AddForce(new Vector2(0, jumpForce));
                 popParticle.Play();

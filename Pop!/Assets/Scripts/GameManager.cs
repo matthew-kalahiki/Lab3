@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
             while (!backgroundImage.GetComponent<Image>().color.Equals(new Color(0,0,0,1))) {
                 yield return null;
             }
-            UpdatePopped();
+            UpdatePopped(false);
         }
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
 
@@ -203,8 +203,8 @@ public class GameManager : MonoBehaviour
     {
         return popped;
     }
-    public void UpdatePopped()
+    public void UpdatePopped(bool isPopped)
     {
-        popped = false;
+        popped = isPopped;
     }
 }
