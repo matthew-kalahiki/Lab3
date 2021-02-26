@@ -60,7 +60,7 @@ public class ScrollingBackgroundScript : MonoBehaviour
     private void ScrollLeft()
     {
         int lastRight = rightIndex;
-        layers[rightIndex].position = new Vector3 (layers[leftIndex].position.x - backgroundSize, 0, depth);
+        layers[rightIndex].position = new Vector3 (layers[leftIndex].position.x - backgroundSize, layers[leftIndex].position.y, depth);
         leftIndex = rightIndex;
         rightIndex--;
         if (rightIndex < 0)
@@ -72,7 +72,7 @@ public class ScrollingBackgroundScript : MonoBehaviour
     private void ScrollRight()
     {
         int lastLeft = leftIndex;
-        layers[leftIndex].position = new Vector3 (layers[rightIndex].position.x + backgroundSize, 0, depth);
+        layers[leftIndex].position = new Vector3 (layers[rightIndex].position.x + backgroundSize, layers[leftIndex].position.y, depth);
         rightIndex = leftIndex;
         leftIndex++;
         if (leftIndex == layers.Length)
