@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DownWorldCamera : MonoBehaviour
 {
+    GameObject camera;
+
     public float speed;
     private GameObject player;
     // Start is called before the first frame update
@@ -24,7 +26,9 @@ public class DownWorldCamera : MonoBehaviour
         }
         if (spriteLoc.y > Camera.main.pixelHeight + 200)
         {
+            GameManager.Instance.UpdateIsPaused();
             GameManager.Instance.NextScene("CentralWorld", new Vector3(0, 0, 0));
+            GetComponent<DownWorldCamera>().enabled = false;
         }
         
     }

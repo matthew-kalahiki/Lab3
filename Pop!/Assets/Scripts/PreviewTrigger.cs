@@ -72,7 +72,8 @@ public class PreviewTrigger : MonoBehaviour
         }
         Camera.transform.position = targetPosition;
         GameManager.Instance.UpdateIsPaused();
-        gameObject.SetActive(false);
+        GameManager.Instance.UpdateIsPreview();
         Camera.GetComponent<FollowCam>().enabled = true;
+        gameObject.SetActive(false);
     }
 }
