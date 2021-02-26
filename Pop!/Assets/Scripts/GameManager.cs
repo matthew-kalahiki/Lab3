@@ -106,6 +106,13 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ColorLerp(new Color(0, 0, 0, 0), 1));
         UpdateIsPaused();
 
+        for (int i = 0; i < 4; i++)
+        {
+            if (screwdrivers[i]) {
+                i = i;
+            }
+        }
+
     }
     public void NextScene(string whichScene, Vector3 whereTo)
     {
@@ -183,5 +190,9 @@ public class GameManager : MonoBehaviour
     public bool beatT()
     {
         return beatTutorial;
+    }
+    public bool[] GetScrewdrivers()
+    {
+        return screwdrivers;
     }
 }
