@@ -117,11 +117,16 @@ public class GameManager : MonoBehaviour
     public void NextScene(string whichScene, Vector3 whereTo)
     {
 
-        beatTutorial = true;
+        
         StartCoroutine(LoadYourAsyncScene(whichScene, whereTo));
       
 
 
+    }
+
+    public void beat(bool b)
+    {
+        beatTutorial = true;
     }
     public GameObject GetPlayer()
     {

@@ -17,6 +17,12 @@ public class DownWorldCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
+    }
+
+    private void FixedUpdate()
+    {
         Vector3 spriteLoc = Camera.main.WorldToScreenPoint(player.transform.position);
         Vector3 pos = transform.position;
         if (pos.y > -83)
@@ -30,6 +36,5 @@ public class DownWorldCamera : MonoBehaviour
             GameManager.Instance.NextScene("CentralWorld", new Vector3(0, 0, 0));
             GetComponent<DownWorldCamera>().enabled = false;
         }
-        
     }
 }
