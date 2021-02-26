@@ -16,10 +16,13 @@ public class PlayerMovement : MonoBehaviour
     float horizontal;
     public float runSpeed = 5f;
     public float jumpForce = 10f;
+    public AudioClip jump;
+    public AudioClip pop;
 
     private bool jumping;
     private bool popped;
     ParticleSystem popParticle;
+    AudioSource sound;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         popParticle = GetComponentsInChildren<ParticleSystem>()[0];
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -58,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown("space") && !jumping)
             {
                 body.AddForce(new Vector2(0, jumpForce));
+                sound.clip = jump;
+                sound.Play();
                 jumping = true;
             }
             else if (Input.GetKeyDown("space") && jumping && !popped)
@@ -66,6 +72,8 @@ public class PlayerMovement : MonoBehaviour
                 GameManager.Instance.UpdatePopped(true);
 
                 body.AddForce(new Vector2(0, jumpForce));
+                sound.clip = pop;
+                sound.Play();
                 popParticle.Play();
 
             }
