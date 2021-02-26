@@ -913,6 +913,14 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+      propertyPath: whereTo.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+      propertyPath: whereTo.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
       propertyPath: whichScene
       value: DownWorld
       objectReference: {fileID: 0}
@@ -1235,6 +1243,14 @@ PrefabInstance:
     - target: {fileID: 2378422793905210882, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+      propertyPath: whereTo.x
+      value: 4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+      propertyPath: whereTo.y
+      value: -0.504
       objectReference: {fileID: 0}
     - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
       propertyPath: whichScene
@@ -3036,7 +3052,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3429,10 +3445,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -1296649766090909797, guid: eb32395b229753d47bcdcd25fd5cebaf, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1296649766090909797, guid: eb32395b229753d47bcdcd25fd5cebaf, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 126
     m_Data:

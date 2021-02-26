@@ -5,12 +5,12 @@ using UnityEngine;
 public class UpworldCamera : MonoBehaviour
 {
 
-    public GameObject sprite1;
+    private GameObject sprite1;
     public GameObject sprite2;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sprite1 = GameManager.Instance.GetPlayer();
     }
 
     // Update is called once per frame

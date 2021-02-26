@@ -5,11 +5,11 @@ using UnityEngine;
 public class DownWorldCamera : MonoBehaviour
 {
     public float speed;
-    public GameObject player;
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameManager.Instance.GetPlayer();
     }
 
     // Update is called once per frame
@@ -22,10 +22,9 @@ public class DownWorldCamera : MonoBehaviour
             pos.y -= speed;
             transform.position = pos;
         }
-        if (spriteLoc.y > Camera.main.pixelHeight + 200 || spriteLoc.y < -200)
+        if (spriteLoc.y > Camera.main.pixelHeight + 200)
         {
-            //DO GAME OVER OR RESTART LEVEL HERE
-            Debug.Log("THisWorks");
+            GameManager.Instance.NextScene("CentralWorld", new Vector3(0, 0, 0));
         }
         
     }
