@@ -1665,6 +1665,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378422793905210892, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
       propertyPath: whichScene
       value: CentralWorld
       objectReference: {fileID: 0}
@@ -1672,8 +1676,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackCentral
       objectReference: {fileID: 0}
+    - target: {fileID: 2378422793905210893, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+--- !u!1 &651715531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2378422793905210893, guid: c8e4bad098f1c1a409af8995d734226d, type: 3}
+  m_PrefabInstance: {fileID: 651715530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &736497171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2563577245453882082, guid: e379cda429b80dc4c9e05147a8c9bd50, type: 3}
@@ -6601,6 +6614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorIndex: 3
+  portal: {fileID: 651715531}
 --- !u!61 &977801054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6907,6 +6921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorIndex: 3
+  portal: {fileID: 651715531}
 --- !u!61 &1170252899
 BoxCollider2D:
   m_ObjectHideFlags: 0

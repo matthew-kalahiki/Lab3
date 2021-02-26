@@ -12,6 +12,8 @@ public class Screwdriver : MonoBehaviour
     private GameObject player2;
     private GameObject player;
 
+    public GameObject portal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class Screwdriver : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "UpWorld")
         {
             player2 = GameObject.Find("Character2");
+            portal.SetActive(false);
 
             if (-5 < player2.transform.position.x && player2.transform.position.x < -3 && player2.transform.position.y > 23)
             {
@@ -40,6 +43,7 @@ public class Screwdriver : MonoBehaviour
                     Destroy(gameObject, sound.clip.length);
                     Debug.Log("1");
                     Destroy(GameObject.Find("ScrewdriverYellow-Sheet_0 (1)"));
+                    portal.SetActive(true);
                 }
             }
         }
