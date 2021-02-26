@@ -205,6 +205,6 @@ public class GameManager : MonoBehaviour
     }
     public void UpdatePopped()
     {
-        popped = !popped;
+        popped = false;
     }
 }

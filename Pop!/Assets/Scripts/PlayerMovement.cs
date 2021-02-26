@@ -33,16 +33,18 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        popped = GameManager.Instance.GetPopped();
+
+
+        animator.SetFloat("horizontal", horizontal);
+        animator.SetBool("jumping", jumping);
+        animator.SetBool("popped", popped);
+
         if (!GameManager.Instance.GetIsPaused())
         {
             horizontal = Input.GetAxisRaw("Horizontal");
 
-           popped = GameManager.Instance.GetPopped();
-
-
-            animator.SetFloat("horizontal", horizontal);
-            animator.SetBool("jumping", jumping);
-            animator.SetBool("popped", popped);
+          
 
             if (horizontal < 0)
             {
