@@ -1,0 +1,31 @@
+﻿Lab 3 Evaluation
+Matthew Kalahiki
+Ian Campbell
+Cameron Minor
+
+
+* the intent of your game: 
+   * The intent of our game is to help a popcorn kernel escape from a popcorn machine in the form of a 2D platformer game. We hoped to create a light-hearted environment that was low-stress, but still engaging.
+* narrative structure
+   * Our game follows the adventure of Colonel Kernel, and his quest to break out of the popcorn machine he is trapped in. He must venture through the machine and collect the four different screwdrivers in order to open the escape panel. Having a central hub allows for the player to gain familiarity with the world they are trapped in, and explore things in a non-linear way.
+* Mechanics
+   * The player moves around using side keys (A and D or arrow keys) and the space bar as a jump. The player is able to double jump once per level by “popping” his kernel. The player moves through the world using regular and hard platforms (regular ones the player can go through from the bottom, hard ones the player can not). There are four levels, along with the central hub to connect them all. 
+* Aesthetics:
+   * Our aesthetics include, custom sprites and animations for our player, NPCs, screwdrivers, and escape panel, as well as a custom start screen and victory screen. We also have a parallax background of the inside of a popcorn machine as well as a movie theater. Additionally, we have sound effects and background music.
+* joys and struggles while writing this game
+
+
+Matthew- My favorite part of this lab was watching everything work (eventually). I very much enjoy the fact that a lot of my code works the first time I type it now. My biggest struggle in this project was pushing and pulling from github. 
+Cameron - My greatest joy was the first time I collected all four screwdrivers and saw that sweet sweet victory screen. It felt like that was the moment our game became a game. I definitely feel that my biggest struggle was getting the canvas to cooperate with itch.io’s fullscreen button. In the end it just never quite worked perfectly.
+Ian - Watching the world come together piece by piece was very rewarding. Having so many scenes made it difficult at times to keep everything communicating well at times but we eventually figured it out. The worst parts are the little bugs that would take so long to fix just for a small detail.
+* listing of the attributions for your game assets (art, sounds, etc),
+Font - https://www.dafont.com/8-bit-hud.font
+Sounds, Music, Sprites, Tilemap - Cameron Minor
+* a paragraph discussing the contributions of each team member to the final game.
+Matthew - Central World Design, Scene Transitions, Screwdriver System
+
+
+Cameron - Leftworld Design, art and music assets, character movement, background scrolling.
+
+
+Ian - Upworld, Rightworld, and Downworld design, particle effects, camera scripts, dialogue.
