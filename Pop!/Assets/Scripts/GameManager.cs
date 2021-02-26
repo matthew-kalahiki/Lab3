@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 
     private bool beatTutorial;
 
+    private bool popped = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -94,6 +96,7 @@ public class GameManager : MonoBehaviour
             while (!backgroundImage.GetComponent<Image>().color.Equals(new Color(0,0,0,1))) {
                 yield return null;
             }
+            UpdatePopped();
         }
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
 
@@ -105,6 +108,7 @@ public class GameManager : MonoBehaviour
         player.transform.position = nextPlayerLoc;
         StartCoroutine(ColorLerp(new Color(0, 0, 0, 0), 1));
         UpdateIsPaused();
+        
 
         for (int i = 0; i < 4; i++)
         {
@@ -194,5 +198,13 @@ public class GameManager : MonoBehaviour
     public bool[] GetScrewdrivers()
     {
         return screwdrivers;
+    }
+    public bool GetPopped()
+    {
+        return popped;
+    }
+    public void UpdatePopped()
+    {
+        popped = !popped;
     }
 }

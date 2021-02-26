@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal");
 
+           popped = GameManager.Instance.GetPopped();
+
 
             animator.SetFloat("horizontal", horizontal);
             animator.SetBool("jumping", jumping);
@@ -59,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
             else if (Input.GetKeyDown("space") && jumping && !popped)
             {
                 popped = true;
+                GameManager.Instance.UpdatePopped();
 
                 body.AddForce(new Vector2(0, jumpForce));
                 popParticle.Play();
