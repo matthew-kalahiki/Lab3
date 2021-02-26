@@ -37,6 +37,7 @@ public class PreviewTrigger : MonoBehaviour
     {
         //isLerp = true;
         GameManager.Instance.UpdateIsPaused();
+        GameManager.Instance.UpdateIsPreview();
         Camera.GetComponent<FollowCam>().enabled = false;
         StartCoroutine(LerpPosition(pos));
 

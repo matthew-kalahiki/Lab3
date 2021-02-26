@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     private bool isPaused = true;
 
+    private bool isPreview = false;
+
     private Coroutine dialogueCo;
 
 
@@ -165,5 +167,13 @@ public class GameManager : MonoBehaviour
             player.GetComponent<Rigidbody2D>().gravityScale = 1;
         }
 
+    }
+    public bool GetIsPreview()
+    {
+        return isPreview;
+    }
+    public void UpdateIsPreview()
+    {
+        isPreview = !isPreview;
     }
 }

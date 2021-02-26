@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal");
 
+
             animator.SetFloat("horizontal", horizontal);
             animator.SetBool("jumping", jumping);
             animator.SetBool("popped", popped);
@@ -64,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
 
             }
         }
+        if (GameManager.Instance.GetIsPreview())
+        {
+            horizontal = 0;
+            animator.SetFloat("horizontal", horizontal);
+        }
     }
 
 
@@ -73,10 +79,11 @@ public class PlayerMovement : MonoBehaviour
         {
             body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
         }
-        else
+      if(GameManager.Instance.GetIsPreview())
         {
             body.velocity = new Vector2(0,0);
         }
+       
     }
 
 
