@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        popParticle = GetComponentsInChildren<ParticleSystem>()[4];
+        popParticle = GetComponentsInChildren<ParticleSystem>()[0];
     }
 
     // Update is called once per frame

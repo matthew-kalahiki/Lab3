@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateScrewdriver(int colorIndex)
     {
-        player.GetComponentsInChildren<ParticleSystem>()[colorIndex].Play();
+        player.GetComponentsInChildren<ParticleSystem>()[colorIndex+1].Play();
         screwdrivers[colorIndex] = true;
         colors[colorIndex].SetActive(true);
     }
